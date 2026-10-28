@@ -1,10 +1,10 @@
 cask "bokich" do
-  version "1.1.0"
-  sha256 "11e3e48e3b4f29b244de6c9200ae13ff224ac3d41f5cdd341a6b7ff17a3031c9"
+  version "2.0.0"
+  sha256 "d97244909d2951c9b4f0dd4dc24c7fa9e89c4d27dfc366585c72863baca02219"
 
   url "https://github.com/maliMirkec/bokich/releases/download/v#{version}/Bokich-#{version}.zip"
   name "Bokich"
-  desc "Keeps you on your current Space when you quit an app"
+  desc "Keeps you on your current Space and follows the apps you pick"
   homepage "https://github.com/maliMirkec/bokich"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "bokich" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Bokich.app"
 
@@ -24,6 +24,7 @@ cask "bokich" do
     Bokich is self-signed, not notarized. On first launch macOS blocks it.
     Open System Settings → Privacy & Security and click Open Anyway.
 
-    Bokich needs Accessibility access to catch Cmd+Q.
+    Bokich needs Accessibility access.
+    Then open the Bokich menu → Setup for the recommended macOS settings.
   EOS
 end
