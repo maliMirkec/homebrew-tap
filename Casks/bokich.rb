@@ -1,6 +1,6 @@
 cask "bokich" do
-  version "2.0.0"
-  sha256 "d97244909d2951c9b4f0dd4dc24c7fa9e89c4d27dfc366585c72863baca02219"
+  version "2.1.0"
+  sha256 "9674664042cefa60c84e1f24a30bdf4066455aa21ee37074be7dbfe1432290fb"
 
   url "https://github.com/maliMirkec/bokich/releases/download/v#{version}/Bokich-#{version}.zip"
   name "Bokich"
